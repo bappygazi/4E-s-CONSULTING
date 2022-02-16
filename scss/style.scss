@@ -1,0 +1,113 @@
+/*common part css*/
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.fw-semiBold {
+  font-weight: 600;
+}
+.fw-medium {
+  font-weight: 500;
+}
+/* font-family: 'Bree Serif', serif;
+font-family: 'Montserrat', sans-serif; */
+.navbar {
+  z-index: 5;
+  padding: 16px 0;
+  &.navbar-light {
+    .nav-item {
+      .nav-link {
+        color: #5e5e5e;
+        font-family: "Montserrat", sans-serif;
+        &.contact {
+          color: #ffffff;
+          border-radius: 5px;
+          letter-spacing: 0.05em;
+          background-color: #9bdbf3;
+        }
+        span {
+          top: 0;
+          right: 0;
+          width: 18px;
+          height: 18px;
+          font-size: 14px;
+          line-height: 18px;
+          background: #a7606f;
+        }
+      }
+    }
+  }
+}
+#banner {
+  padding-top: 160px;
+  position: relative;
+  padding-bottom: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/banner.png);
+  &::after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 82px;
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-image: url(../images/banner-bottom.png);
+  }
+  .banner-text {
+    h2 {
+      font-size: 65px;
+      color: #008bad;
+      line-height: 63px;
+      margin-bottom: 24px;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      color: #5e5e5e;
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 50px;
+    }
+    .btn {
+      height: 47px;
+      width: 188px;
+      color: #008bad;
+      border-radius: 5px;
+      border: 2px solid #008bad;
+      transition: all linear 0.2s;
+      &:hover {
+        color: #ffffff;
+        background-color: #008bad;
+      }
+    }
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
