@@ -31,9 +31,15 @@ a:hover {
 }
 
 // navbar part css //
+.navbg {
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.048);
+}
 .navbar {
   z-index: 5;
   padding: 16px 0;
+  transition: all linear 0.1s;
+
   &.navbar-light {
     .nav-item {
       .nav-link {
@@ -225,6 +231,214 @@ a:hover {
       width: 180px;
       height: 48px;
       color: #008bad;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+
+// who we are part css //
+#who-we-are {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  .who-we-are-text {
+    h5 {
+      color: #5e5e5e;
+      margin-bottom: 16px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      color: #5e5e5e;
+      font-size: 35px;
+      line-height: 42px;
+      margin-bottom: 25px;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      color: #5e5e5e;
+      line-height: 23px;
+      margin-bottom: 30px;
+      font-family: "Montserrat", sans-serif;
+    }
+    .btn {
+      width: 180px;
+      height: 48px;
+      background-color: #a7606f;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+
+// Testimonials part css //
+#testimonials {
+  padding: 100px 0;
+  .testimonials-title {
+    h5 {
+      color: #5e5e5e;
+      margin-bottom: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      font-size: 35px;
+      line-height: 40px;
+      color: #5e5e5e;
+      font-family: "Bree Serif", serif;
+    }
+    img {
+      left: 49%;
+      bottom: -25px;
+      transform: translateX(-50%);
+    }
+  }
+  .carousel-inner {
+    margin-top: 65px;
+    border-radius: 5px;
+    padding: 40px 50px;
+    background: #f7f7f7;
+    .carousel-item {
+      .testimonials-text {
+        p {
+          color: #5e5e5e;
+          font-size: 18px;
+          margin-bottom: 30px;
+          font-family: "Montserrat", sans-serif;
+        }
+        .customer-info {
+          font-family: "Montserrat", sans-serif;
+          h4 {
+            color: #5e5e5e;
+            font-size: 18px;
+          }
+          p {
+            color: #5e5e5e;
+            font-size: 16px;
+          }
+          .review {
+            i {
+              color: #4a7473;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    bottom: auto;
+    opacity: 1;
+    i {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      font-size: 40px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: #4a7473;
+    }
+  }
+  .carousel-control-next {
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev {
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+  }
+}
+// Subscribtion part css //
+#subscribtion {
+  padding-top: 450px;
+  padding-bottom: 290px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/Subscription.png);
+  .subscribtion-shape-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer-shape-top {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .subscribe-content {
+    h5 {
+      margin-bottom: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      font-size: 35px;
+      margin-bottom: 60px;
+      font-family: "Bree Serif", serif;
+    }
+    .subscribe-box {
+      input {
+        height: 45px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: transparent;
+        font-family: "Montserrat", sans-serif;
+        &::placeholder {
+          color: #ffffff;
+        }
+      }
+      .name-box {
+        width: 370px;
+      }
+      .email-box {
+        width: 470px;
+      }
+      .subscribe-btn {
+        .btn {
+          width: 270px;
+          height: 45px;
+          font-size: 18px;
+          background-color: #a7606f;
+        }
+      }
+    }
+  }
+}
+// footer part css //
+#footer {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  background-color: #008bad;
+  .footer-items {
+    font-family: "Montserrat", sans-serif;
+    ul {
+      li {
+        i {
+          width: 30px;
+          height: 30px;
+          font-size: 15px;
+          color: #ffffff;
+          line-height: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .footer-subcription-box {
+    input {
+      height: 35px;
+      font-size: 16px;
+      color: #ffffff;
+      &::placeholder {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+    .btn {
+      height: 45px;
+      font-size: 18px;
+      color: #008bad !important;
       font-family: "Montserrat", sans-serif;
     }
   }
