@@ -520,5 +520,80 @@ a:hover {
 }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .ece-service-title {
+    margin-bottom: 80px;
+  }
+  #testimonials .carousel-control-next {
+    right: -10px;
+  }
+  #testimonials .carousel-control-prev {
+    left: -10px;
+  }
+  #subscribtion .subscribe-content .subscribe-box .subscribe-btn .btn {
+    width: 90px;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #ece-service .ece-service-title h3 {
+    font-size: 25px;
+  }
+  #ece-service .ece-service-text h3 {
+    font-size: 20px;
+  }
+  #ece-service .ece-service-text p {
+    font-size: 14px !important;
+  }
+  #learning-hub .learning-hub-text h3 {
+    font-size: 23px;
+    line-height: 35px;
+  }
+  #learning-hub .learning-hub-text p {
+    font-size: 12px !important;
+  }
+  #testimonials .carousel-control-next {
+    right: -100px;
+  }
+  #testimonials .carousel-control-prev {
+    left: -100px;
+  }
+  #subscribtion .subscribe-content .subscribe-box .subscribe-btn .btn {
+    width: 125px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-light .navbar-brand {
+    width: 150px;
+  }
+  .navbar.navbar-light .nav-item .nav-link {
+    font-size: 12px !important;
+  }
+  #ece-service .ece-service-title h3 {
+    font-size: 25px;
+  }
+  #ece-service .ece-service-text p {
+    line-height: 20px;
+  }
+  #ece-service .ece-service-text h3 {
+    font-size: 22px;
+  }
+  #learning-hub .learning-hub-text h3 {
+    font-size: 25px;
+  }
+  #who-we-are .who-we-are-text h3 {
+    font-size: 30px;
+  }
+  #testimonials .carousel-inner .carousel-item .testimonials-text p {
+    font-size: 16px;
+  }
+  #testimonials .carousel-control-next {
+    right: -140px;
+  }
+  #testimonials .carousel-control-prev {
+    left: -140px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
