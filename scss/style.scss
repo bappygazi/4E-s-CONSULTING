@@ -92,14 +92,18 @@ a:hover {
       font-size: 25px;
       line-height: 35px;
       margin-bottom: 50px;
+      font-family: "Montserrat", sans-serif;
     }
     .btn {
       height: 47px;
       width: 188px;
       color: #008bad;
       border-radius: 5px;
+      letter-spacing: 0.05em;
       border: 2px solid #008bad;
       transition: all linear 0.2s;
+      font-family: "Montserrat", sans-serif;
+
       &:hover {
         color: #ffffff;
         background-color: #008bad;
@@ -113,9 +117,10 @@ a:hover {
   padding-bottom: 100px;
   .ece-service-title {
     h3 {
-      font-size: 35px;
+      font-size: 34px;
       line-height: 40px;
       color: #5e5e5e;
+      letter-spacing: 0.03em;
       font-family: "Bree Serif", serif;
     }
     img {
@@ -154,6 +159,7 @@ a:hover {
       color: #5e5e5e;
       font-size: 35px;
       margin-bottom: 15px;
+      letter-spacing: 0.03em;
       font-family: "Bree Serif", serif;
     }
     p {
@@ -183,6 +189,7 @@ a:hover {
     h4 {
       font-size: 18px;
       margin-bottom: 15px;
+      letter-spacing: 0.02em;
       font-family: "Montserrat", sans-serif;
     }
     p {
@@ -232,6 +239,7 @@ a:hover {
       width: 180px;
       height: 48px;
       color: #008bad;
+      letter-spacing: 0.05em;
       font-family: "Montserrat", sans-serif;
     }
   }
@@ -264,6 +272,7 @@ a:hover {
     .btn {
       width: 180px;
       height: 48px;
+      letter-spacing: 0.05em;
       background-color: #a7606f;
       font-family: "Montserrat", sans-serif;
     }
@@ -283,6 +292,7 @@ a:hover {
       font-size: 35px;
       line-height: 40px;
       color: #5e5e5e;
+      letter-spacing: 0.03em;
       font-family: "Bree Serif", serif;
     }
     img {
@@ -375,6 +385,7 @@ a:hover {
     h3 {
       font-size: 35px;
       margin-bottom: 60px;
+      letter-spacing: 0.03em;
       font-family: "Bree Serif", serif;
     }
     .subscribe-box {
@@ -401,6 +412,7 @@ a:hover {
           height: 45px;
           font-size: 18px;
           background-color: #a7606f;
+          font-family: "Montserrat", sans-serif;
         }
       }
     }
@@ -441,6 +453,16 @@ a:hover {
       font-size: 18px;
       color: #008bad !important;
       font-family: "Montserrat", sans-serif;
+    }
+  }
+  .footer-content {
+    padding-top: 35px;
+    small {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      a {
+        color: #ffffff;
+      }
     }
   }
 }
