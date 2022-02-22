@@ -1,3 +1,6 @@
+// common scss //
+@import "vendors/normalize";
+
 // all typography scss //
 @import "base/typography";
 
@@ -11,6 +14,3 @@
 
 // pages scss //
 @import "pages/home";
-
-// common scss //
-@import "vendors/normalize";

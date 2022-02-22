@@ -1,3 +1,37 @@
+/*common part css*/
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.fw-semiBold {
+  font-weight: 600;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
 .navbar.navbar-light .nav-item .nav-link {
   color: #5e5e5e;
   font-family: "Montserrat", sans-serif;
@@ -707,39 +741,5 @@
   #subscribtion .subscribtion__shape-top {
     top: -1px !important;
   }
-}
-
-/*common part css*/
-* {
-  margin: 0;
-  outline: 0;
-  padding: 0;
-}
-
-img {
-  border: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.fw-semiBold {
-  font-weight: 600;
-}
-
-.fw-medium {
-  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
