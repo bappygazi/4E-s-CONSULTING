@@ -538,6 +538,13 @@ a:hover {
   width: fit-content;
 }
 
+.navbar .modal .modal-dialog .modal-content .modal-body .navbar-nav .nav-item a i {
+  width: 25px;
+  height: 25px;
+  color: #008bad;
+  border: 1px solid #008bad;
+}
+
 #banner {
   padding-top: 160px;
   padding-bottom: 160px;
