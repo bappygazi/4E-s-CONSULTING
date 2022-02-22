@@ -10,4 +10,11 @@ $(function () {
       sticky.removeClass("navbg");
     }
   });
+  // toggle navbar button //
+  $(".navbar-toggler").on("click", function () {
+    $(".navbar-brand").addClass("navbar-brand-opacity");
+  });
+  $(".close-btn").on("click", function () {
+    $(".navbar-brand").removeClass("navbar-brand-opacity");
+  });
 });

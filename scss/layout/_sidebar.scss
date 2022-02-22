@@ -1,0 +1,67 @@
+// navbar sidebar for responsive menu //
+.modal-backdrop.show {
+  opacity: 0.1;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.navbar {
+  padding: 16px 30px;
+  &.navbar-light {
+    .navbar-brand {
+      &.navbar-brand-opacity {
+        opacity: 0;
+        transition: all linear 0.2s;
+      }
+    }
+  }
+  .modal {
+    &.fade {
+      transition: opacity 0.3s linear !important;
+
+      .modal-dialog {
+        transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+        transform: translate(0px, 0px);
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    .modal-dialog {
+      max-width: 100% !important;
+      .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-left: auto;
+        height: 100vh;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: none;
+        border-radius: 0.3rem;
+        outline: 0;
+        .modal-header {
+          border: none;
+        }
+        .modal-body {
+          .navbar-nav {
+            padding-top: 30px;
+            .nav-item {
+              .nav-link {
+                &.contact {
+                  width: fit-content;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

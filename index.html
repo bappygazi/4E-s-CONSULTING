@@ -18,12 +18,12 @@
   </head>
   <body>
     <!--    navbar part hmtl start-->
-    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 d-none d-lg-flex">
       <div class="container">
         <a class="navbar-brand" href="./index.html">
           <img src="./images/logo.png" alt="logo.png" class="img-fluid" />
         </a>
-        <button class="navbar-toggler py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto rounded align-items-center">
             <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Consulting</a></li>
@@ -33,6 +33,7 @@
             <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Shop</a></li>
             <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">About us</a></li>
             <li class="nav-item mx-2"><a class="nav-link fw-bold fs-6 p-2 mb-0 contact" href="#">Contact us</a></li>
+
             <li class="nav-item mx-2">
               <a class="nav-link fw-semiBold fs-6" href="#"><img src="./images/user.svg" alt="user.svg" class="img-fluid" /></a>
             </li>
@@ -46,25 +47,64 @@
         </div>
       </div>
     </nav>
+    <nav class="navbar navbar-mobile navbar-expand-lg navbar-light position-fixed w-100 px-2 d-flex d-lg-none">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.png" alt="logo.png" class="img-fluid" />
+      </a>
+      <a class="ms-auto me-4" href="#"><img src="./images/shop_cart.svg" alt="" /></a>
+      <!-- Button trigger modal -->
+      <button class="navbar-toggler py-2" type="button" data-bs-toggle="modal" data-bs-target="#sidebar"><img src="./images/bar.svg" alt="bar.svg" /></button>
+      <!-- Modal -->
+      <div class="modal fade" id="sidebar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog m-0 modal-dialog-centered">
+          <div class="modal-content bg-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                <a class="navbar-logo" href="#">
+                  <img class="img-fluid" src="./images/logo.png" alt="logo.png" />
+                </a>
+              </h5>
+              <button type="button" class="btn close-btn" data-bs-dismiss="modal" aria-label="Close"><img src="./images/close.svg" alt="close.svg" /></button>
+            </div>
+            <div class="modal-body p-0 bg-white">
+              <ul class="navbar-nav ms-auto px-5">
+                <li class="nav-item px-2 py-2">
+                  <a class="me-2" href="#"><img src="./images/user-nav.svg" alt="user-nav" class="img-fluid" /></a>
+                  <a class="ms-2" href="#"><img src="./images/shop_cart2.svg" alt="user-nav" class="img-fluid" /></a>
+                </li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Consulting</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Education</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Subscriptions</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Blog</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Shop</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">About us</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-bold fs-6 p-2 mb-0 contact" href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+    </nav>
     <!--    navbar part hmtl end-->
 
     <!--    banner part hmtl start-->
     <section id="banner" class="position-relative">
-      <div class="bottom-shape position-absolute">
+      <div class="bottom__shape position-absolute">
         <img src="./images/banner-bottom.png" alt="banner-bottom.png" class="img-fluid w-100" />
       </div>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="banner-text">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="banner__text pt-5 pt-lg-0 text-center text-lg-start">
               <h2 class="text-uppercase fw-normal">Looking to grow your ECE service?</h2>
               <p class="fw-semiBold pe-lg-5">Our qualified consultants bridge the gap between business and education, bringing you an in-depth 360° service.</p>
-              <button class="btn fw-bold me-4 fs-6">Meet the team</button>
+              <button class="btn fw-bold me-md-4 fs-6">Meet the team</button>
               <button class="btn fw-bold ms-1 fs-6">Contact Us</button>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="banner-img pt-5 pt-lg-0">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="banner__img">
               <img src="./images/banner-img.png" alt="banner-img" class="img-fluid w-100" />
             </div>
           </div>
@@ -74,11 +114,11 @@
     <!--    banner part hmtl end-->
 
     <!--    ECE Service part hmtl start-->
-    <section id="ece-service">
+    <section id="ece__service">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-3 col-md-4">
-            <div class="ece-service-title position-relative">
+            <div class="ece__service-title position-relative">
               <h3 class="fw-normal pt-4">How we mentor you to create a better ECE Service.</h3>
               <img src="./images/bottom-border.svg" alt="bottom-border.svg" class="img-fluid position-absolute" />
             </div>
@@ -86,14 +126,14 @@
           <div class="col-lg-8 col-md-8">
             <div class="row m-auto justify-content-between">
               <div class="col-lg-5 col-md-6">
-                <div class="ece-service-text">
+                <div class="ece__service-text">
                   <div class="ece-service-icon mb-2">
                     <img src="./images/Engage.svg" alt="Engage" class="img-fluid" />
                   </div>
                   <h3 class="fw-normal">Engage with you</h3>
                   <p class="fw-normal fs-6">We enable your vision through seeking and implementing creative solutions when developing and maintaining the management of your business.</p>
                 </div>
-                <div class="ece-service-text">
+                <div class="ece__service-text">
                   <div class="ece-service-icon mb-2">
                     <img src="./images/Empower.svg" alt="Empower" class="img-fluid" />
                   </div>
@@ -102,14 +142,14 @@
                 </div>
               </div>
               <div class="col-lg-5 col-md-6">
-                <div class="ece-service-text">
+                <div class="ece__service-text">
                   <div class="ece-service-icon mb-2">
                     <img src="./images/Enable.svg" alt="Enable" class="img-fluid" />
                   </div>
                   <h3 class="fw-normal">Enable your Vision</h3>
                   <p class="fw-normal fs-6">We enable your vision through seeking and implementing creative solutions when developing and maintaining the management of your business.</p>
                 </div>
-                <div class="ece-service-text">
+                <div class="ece__service-text">
                   <div class="ece-service-icon mb-2">
                     <img src="./images/Evolve.svg" alt="Evolve" class="img-fluid" />
                   </div>
@@ -125,11 +165,11 @@
     <!--    ECE Service part hmtl end-->
 
     <!--    Our Services part hmtl start-->
-    <section id="our-service">
+    <section id="our__service">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="our-service-title text-center">
+            <div class="our__service-title text-center">
               <h5 class="fw-bold fs-6 text-uppercase">Our Services</h5>
               <h3 class="fw-normal">Our offerings in a nutshell.</h3>
               <p class="fw-normal fs-6">We are passionate about your business success.</p>
@@ -138,37 +178,37 @@
         </div>
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="our-service-consulting text-center position-relative">
-              <div class="our-service-icon">
+            <div class="our__service-consulting text-center position-relative">
+              <div class="our__service-icon">
                 <img src="./images/consulting.svg" alt="consulting.svg" class="img-fluid" />
               </div>
               <h4 class="fw-bold text-white">Consulting</h4>
               <p class="fw-medium fs-6 text-white">4E's has a diverse range of ECE consulting services that your business can tap into for support covering all aspects of management and governance consulting for all round business support.</p>
-              <div class="bottom-arrow position-absolute">
+              <div class="bottom__arrow position-absolute">
                 <img src="./images/consulting-arrow.svg" alt="consulting-arrow.svg" class="img-fluid" />
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="our-service-education text-center position-relative">
-              <div class="our-service-icon">
+            <div class="our__service-education text-center position-relative">
+              <div class="our__service-icon">
                 <img src="./images/Education.svg" alt="Education.svg" class="img-fluid" />
               </div>
               <h4 class="fw-bold text-white">Education</h4>
               <p class="fw-medium fs-6 text-white">4E's offers a wide range of professional learning development options for you as ECE operators and educators - including face-to-face, online learning, teacher registration and management mentoring and leadership education programmes.</p>
-              <div class="bottom-arrow position-absolute">
+              <div class="bottom__arrow position-absolute">
                 <img src="./images/Education-arrow.svg" alt="Education-arrow.svg" class="img-fluid" />
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="our-service-subscriptions text-center position-relative">
-              <div class="our-service-icon">
+            <div class="our__service-subscriptions text-center position-relative">
+              <div class="our__service-icon">
                 <img src="./images/Subscription.svg" alt="Subscription.svg" class="img-fluid" />
               </div>
               <h4 class="fw-bold text-white">Subscriptions</h4>
               <p class="fw-medium fs-6 text-white">Enhance your professional knowledge and support your team through accessible, affordable and convenient membership subscriptions!</p>
-              <div class="bottom-arrow position-absolute">
+              <div class="bottom__arrow position-absolute">
                 <img src="./images/Subscription-arrow.svg" alt="Subscription-arrow.svg" class="img-fluid" />
               </div>
             </div>
@@ -179,17 +219,17 @@
     <!--    Our Services part hmtl end-->
 
     <!--    Learning HUb part hmtl start-->
-    <section id="learning-hub" class="position-relative">
-      <div class="learning-shape-top position-absolute">
+    <section id="learning__hub" class="position-relative">
+      <div class="learning__shape-top position-absolute">
         <img src="./images/Learning-Hub-shape-top.png" alt="Learning-HUb-shape-top.svg" class="img-fluid w-100" />
       </div>
-      <div class="learning-shape-bottom position-absolute">
+      <div class="learning__shape-bottom position-absolute">
         <img src="./images/Learning-Hub-shape-bottom.png" alt="banner-bottom.png" class="img-fluid w-100" />
       </div>
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-5 col-md-6">
-            <div class="learning-hub-text pe-lg-4">
+            <div class="learning__hub-text pe-lg-4">
               <h5 class="fw-bold fs-6 text-uppercase text-white">Learning HUb</h5>
               <h3 class="fw-normal text-white">Guide you to the information you need to make successful business decisions.</h3>
               <p class="fw-semiBold fs-6 text-white pe-lg-3">We help in bridging the gap between business and education, offering you our in-depth understanding of business concepts, regulatory and legislative requirements, and day-to-day operations.</p>
@@ -197,7 +237,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
-            <div class="learning-hub-img text-center text-md-start pt-5 pt-md-0">
+            <div class="learning__hub-img text-center text-md-start pt-5 pt-md-0">
               <img src="./images/learning.png" alt="Learning Hub.png" class="img-fluid" />
             </div>
           </div>
@@ -205,16 +245,16 @@
       </div>
     </section>
     <!--    who we are part hmtl start-->
-    <section id="who-we-are" class="position-relative">
+    <section id="who__we-are" class="position-relative">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-6">
-            <div class="who-we-are-img">
+            <div class="who__we-are-img">
               <img src="./images/who-we-are.png" alt="who-we-are.png" class="img-fluid" />
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="who-we-are-text pe-lg-5">
+            <div class="who__we-are-text pe-lg-5">
               <h5 class="fw-bold fs-6 text-uppercase">WHO WE ARE</h5>
               <h3 class="fw-normal">Find out more about us</h3>
               <p class="fw-semiBold fs-6">4E's was created by a group of Kaiako/ Tumuaki in early childhood education, paired with business management acumen and ECE design experience.</p>
@@ -232,7 +272,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="testimonials-title text-center position-relative">
+            <div class="testimonials__title text-center position-relative">
               <h5 class="fw-bold fs-6 text-uppercase">Testimonials</h5>
               <h3 class="fw-normal">Word on the street</h3>
               <img src="./images/bottom-border.svg" alt="bottom-border.svg" class="img-fluid position-absolute" />
@@ -240,18 +280,18 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-9 col-md-8 col-11 m-auto">
+          <div class="col-lg-9 col-md-10 col-12 m-auto">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row m-auto align-items-center justify-content-between">
                     <div class="col-lg-4">
-                      <div class="brand-img mb-3">
+                      <div class="brand__img mb-3">
                         <img src="./images/ChapelDownsLogo.png" alt="ChapelDownsLogo.png" class="img-fluid" />
                       </div>
                     </div>
                     <div class="col-lg-7">
-                      <div class="testimonials-text">
+                      <div class="testimonials__text">
                         <p class="fst-italic fw-normal">“As a recipient of your annual support package which provides MoE required legislative updates to our policy, procedures and processes as they are required (and indeed with a wide range of mandatory documentation) I am as the manager of our community based early childhood centre continually impressed with the efficiency and quality of the documentation support you offer. As a manager/teacher who works full time “on the floor” this service offers me a huge time saving solution and one which our administering trust is also confident in pursuing.”</p>
                         <div class="customer-info">
                           <h4 class="fw-semiBold">Jill Bathgate</h4>
@@ -271,12 +311,12 @@
                 <div class="carousel-item">
                   <div class="row m-auto align-items-center justify-content-between">
                     <div class="col-lg-4">
-                      <div class="brand-img mb-3">
+                      <div class="brand__img mb-3">
                         <img src="./images/ChapelDownsLogo.png" alt="ChapelDownsLogo.png" class="img-fluid" />
                       </div>
                     </div>
                     <div class="col-lg-7">
-                      <div class="testimonials-text">
+                      <div class="testimonials__text">
                         <p class="fst-italic fw-normal">“As a recipient of your annual support package which provides MoE required legislative updates to our policy, procedures and processes as they are required (and indeed with a wide range of mandatory documentation) I am as the manager of our community based early childhood centre continually impressed with the efficiency and quality of the documentation support you offer. As a manager/teacher who works full time “on the floor” this service offers me a huge time saving solution and one which our administering trust is also confident in pursuing.”</p>
                         <div class="customer-info">
                           <h4 class="fw-semiBold">Jill Bathgate</h4>
@@ -296,12 +336,12 @@
                 <div class="carousel-item">
                   <div class="row m-auto align-items-center justify-content-between">
                     <div class="col-lg-4">
-                      <div class="brand-img mb-3">
+                      <div class="brand__img mb-3">
                         <img src="./images/ChapelDownsLogo.png" alt="ChapelDownsLogo.png" class="img-fluid" />
                       </div>
                     </div>
                     <div class="col-lg-7">
-                      <div class="testimonials-text">
+                      <div class="testimonials__text">
                         <p class="fst-italic fw-normal">“As a recipient of your annual support package which provides MoE required legislative updates to our policy, procedures and processes as they are required (and indeed with a wide range of mandatory documentation) I am as the manager of our community based early childhood centre continually impressed with the efficiency and quality of the documentation support you offer. As a manager/teacher who works full time “on the floor” this service offers me a huge time saving solution and one which our administering trust is also confident in pursuing.”</p>
                         <div class="customer-info">
                           <h4 class="fw-semiBold">Jill Bathgate</h4>
@@ -336,27 +376,27 @@
 
     <!--   Subscribtion part hmtl start-->
     <section id="subscribtion" class="position-relative">
-      <div class="subscribtion-shape-top position-absolute">
+      <div class="subscribtion__shape-top position-absolute">
         <img src="./images/Subscription-shape-top.png" alt="subscribtion-shape-top" class="img-fluid w-100" />
       </div>
-      <div class="footer-shape-top position-absolute">
+      <div class="footer__shape-top position-absolute">
         <img src="./images/footer-shape-top.png" alt="footer-shape-top.png" class="img-fluid w-100" />
       </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="subscribe-content text-center position-relative">
+            <div class="subscribe__content text-center position-relative">
               <h5 class="fw-bold fs-6 text-uppercase text-white">4E’s UPDATES</h5>
               <h3 class="fw-normal text-white">Subscribe here to stay in the know.</h3>
               <form>
-                <div class="subscribe-box d-flex w-100 justify-content-center align-items-center">
-                  <div class="name-box me-3">
+                <div class="subscribe__box d-flex w-100 justify-content-center align-items-center">
+                  <div class="name__box me-3">
                     <input class="form-control border border-white border-2" type="text" placeholder="Name" aria-label="Name input" />
                   </div>
-                  <div class="email-box mx-3">
+                  <div class="email__box mx-3">
                     <input class="form-control border border-white border-2" type="email" placeholder="Email address" aria-label="Email input" />
                   </div>
-                  <div class="subscribe-btn ms-3">
+                  <div class="subscribe__btn ms-3">
                     <button class="btn p-0 fw-semiBold text-white">Subscribe</button>
                   </div>
                 </div>
