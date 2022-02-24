@@ -488,13 +488,18 @@ a:hover {
   transition: all linear 0.2s;
 }
 
+.navbar.navbar-light .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .navbar .modal.fade {
-  -webkit-transition: opacity 0.3s linear !important;
-  transition: opacity 0.3s linear !important;
+  -webkit-transition: opacity 0.2s linear !important;
+  transition: opacity 0.2s linear !important;
 }
 
 .navbar .modal.fade .modal-dialog {
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   background-color: rgba(255, 255, 255, 0.7);
