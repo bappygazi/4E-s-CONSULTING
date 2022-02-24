@@ -338,6 +338,12 @@ a:hover {
   background-color: #008bad;
 }
 
+@media (max-width: 767.98px) {
+  .banner__text .btn {
+    width: 170px;
+  }
+}
+
 #learning__hub .learning__hub-text .btn {
   width: 180px;
   height: 48px;
@@ -416,6 +422,12 @@ a:hover {
   color: #ffffff;
   line-height: 30px;
   text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  #footer .footer-items ul li {
+    font-size: 15px;
+  }
 }
 
 #footer .footer-subcription-box input {
@@ -752,7 +764,10 @@ a:hover {
 
 @media (max-width: 767.98px) {
   #subscribtion .subscribtion__shape-top {
-    top: -1px !important;
+    top: -2px !important;
+  }
+  #subscribtion .footer__shape-top {
+    bottom: -2px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

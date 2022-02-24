@@ -168,7 +168,10 @@
   }
   @media (max-width: 767.98px) {
     .subscribtion__shape-top {
-      top: -1px !important;
+      top: -2px !important;
+    }
+    .footer__shape-top {
+      bottom: -2px !important;
     }
   }
 }
