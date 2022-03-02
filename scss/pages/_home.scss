@@ -44,6 +44,7 @@
     height: 100%;
     padding: 40px;
     border-radius: 12px;
+
     .our__service-icon {
       margin-bottom: 50px;
     }
@@ -51,6 +52,9 @@
       left: 50%;
       bottom: 25px;
       transform: translateX(-50%);
+    }
+    @media (min-width: 1400px) and (max-width: 1920px) {
+      width: 380px;
     }
   }
 }
@@ -67,6 +71,9 @@
     left: 0;
     bottom: 0;
     width: 100%;
+  }
+  .learning__hub-img {
+    padding-top: 80px;
   }
 }
 

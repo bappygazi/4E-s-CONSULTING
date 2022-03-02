@@ -247,7 +247,7 @@ a:hover {
 }
 
 #testimonials .testimonials__title img {
-  left: 49%;
+  left: 48.6%;
   bottom: -25px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -422,6 +422,11 @@ a:hover {
   color: #ffffff;
   line-height: 30px;
   text-align: center;
+  display: inline-block;
+}
+
+#footer .footer-items ul li i svg {
+  vertical-align: unset;
 }
 
 @media (max-width: 767.98px) {
@@ -632,6 +637,14 @@ a:hover {
           transform: translateX(-50%);
 }
 
+@media (min-width: 1400px) and (max-width: 1920px) {
+  #our__service .our__service-consulting,
+  #our__service .our__service-education,
+  #our__service .our__service-subscriptions {
+    width: 380px;
+  }
+}
+
 #learning__hub {
   padding: 250px 0;
   background-color: #008bad;
@@ -647,6 +660,10 @@ a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+#learning__hub .learning__hub-img {
+  padding-top: 80px;
 }
 
 #who__we-are {
