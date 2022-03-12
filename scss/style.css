@@ -67,7 +67,7 @@ a:hover {
   color: #5e5e5e;
   font-size: 25px;
   line-height: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -93,13 +93,14 @@ a:hover {
 }
 
 #ece__service .ece__service-text {
-  margin-bottom: 70px;
+  height: 40%;
+  margin-bottom: 82px;
 }
 
 #ece__service .ece__service-text h3 {
   color: #008bad;
   font-size: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
   font-family: "Bree Serif", serif;
 }
 
@@ -599,7 +600,7 @@ a:hover {
 }
 
 #our__service .our__service-title {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
 #our__service .our__service-consulting {
@@ -641,7 +642,7 @@ a:hover {
   #our__service .our__service-consulting,
   #our__service .our__service-education,
   #our__service .our__service-subscriptions {
-    width: 380px;
+    width: 390px;
   }
 }
 
